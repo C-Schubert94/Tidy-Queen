@@ -1,138 +1,130 @@
-:root{
-    --primary-color: #5ce1e6;
-    --text-color: rgba(0, 0, 0, 0.75);
-    font-size: 16px;
+:root {
+  --primary-color: #5ce1e6;
+  --text-color: rgba(0, 0, 0, 0.75);
+  --header-font: 'Noto Serif', serif;
+  font-size: 16px;
 }
 
 /*NAVBAR SECTION*/
 
-.navbar{
-    background: linear-gradient(var(--primary-color) 65%, #fff) ;
-    font-size: 1.5rem;
+.navbar {
+  background: linear-gradient(var(--primary-color) 65%, #fff);
+  font-size: 1.5rem;
 }
 
-.header-img{
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+.header-img {
+  display: block;
+  margin: 0 auto;
+  width: max(450px, 50%);
 }
 
 /* SERVICING AREAS SECTION*/
 
-
-.service-areas-header h2{
-    font-size: clamp(2rem, 3vw, 4rem);
-    padding-bottom: 0.5em;
+.service-areas-header h2 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-family: var(--header-font);
+  padding-bottom: 0.5em;
 }
 
-.service-areas, .cleaning-services{
-    background: linear-gradient(#fff 5%, var(--primary-color) 10% 95%, #fff );
-    text-align: center;
-    font-size: clamp(1.25rem, 1.75vw, 4rem);
-    padding-top: 2em;
-    padding-bottom: 1em;
-    
+.service-areas,
+.cleaning-services {
+  background: linear-gradient(#fff 5%, var(--primary-color) 10% 95%, #fff);
+  text-align: center;
+  font-size: clamp(1.25rem, 1.75vw, 4rem);
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
-
-.service-areas ul li, .cleaning-services ul li{
-    list-style-type: none;
-    color: var(--text-color);
+.service-areas ul li,
+.cleaning-services ul li,
+.contact ul li {
+  list-style-type: none;
+  color: var(--text-color);
 }
 
 /*GALLERY SECTION*/
 
-.gallery-header h2{
-    text-align: center;
-    font-size: clamp(1.5rem, 3vw, 4rem);
-    margin: 1em 0;
+.gallery-header h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-family: var(--header-font);
+  margin: 1em 0;
 }
 
-#carousel-container{
-    margin: auto;
-    width: 60%;
+#carousel-container {
+  margin: auto;
+  width: max(450px,60%);
 }
 
-.carousel-inner img{
-    margin: auto;
-    width: 60%;
+.carousel-inner img {
+  margin: auto;
+  width: 60%;
 }
 
 /*SERVICES INCLUDED SECTION*/
 
-.services-header h2{
-    text-align: center;
-    font-size: clamp(2rem, 3vw, 4rem);
-    margin: 1em 0;
+.services-header h2 {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-family: var(--header-font);
+  margin: 1em 0;
 }
 
-.services-list{
-    font-size: clamp(1.5rem, 2vw, 3rem);
-    font-style: italic;
-    text-decoration: underline;
+.services-list {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /*CONTACT SECTION*/
 
-.contact{
-    margin: 1em 0;
+.contact {
+  margin: 1em 0;
 }
 
-.contact h2{
-    text-align: center;
-    font-size: clamp(2rem, 3vw, 4rem);
-    margin: 1em 0;
+.contact h2 {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 4rem);
+  font-family: var(--header-font);
+  margin: 1em 0;
 }
 
-.contact ul{
-    list-style: none;
+.contact ul {
+  list-style: none;
+  font-size: clamp(1rem, 1.5vw, 3rem);
 }
 
-.icon{
-    width: 4rem;
+.contact ul li {
+  padding: 1em 0;
 }
 
+.contact ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
+.icon {
+  width: min(100px, 15%);
+  padding-right: 1em;
+  filter: invert(79%) sepia(54%) saturate(453%) hue-rotate(129deg)
+    brightness(96%) contrast(88%);
+}
+
+.facebook:hover{
+    color: var(--primary-color);
+}
 
 /*TEXT ANIMATION*/
 
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-35%);
-    transition: all 1s;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-35%);
+  transition: all 1s;
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
-
-/* .li:nth-child(2){
-    transition-delay: 200ms;
-}
-
-.li:nth-child(3){
-    transition-delay: 400ms;
-}
-
-.li:nth-child(4){
-    transition-delay: 600ms;
-}
-
-.li:nth-child(5){
-    transition-delay: 800ms;
-}
-
-.li:nth-child(6){
-    transition-delay: 1000ms;
-}
-
-.li:nth-child(7){
-    transition-delay: 1200ms;
-}
-
-.li:nth-child(8){
-    transition-delay: 1400ms;
-} */

@@ -9,15 +9,20 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles.css" rel="stylesheet" />
     <script defer src="app.js"></script>
 
     <title>Tidy Queen's Home Page</title>
   </head>
   <body>
-
     <!-- NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light ">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -33,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Services</a>
+              <a class="nav-link" href="#service-areas-section">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery-section">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contact-section">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -54,7 +59,7 @@
     />
 
     <!-- SERVICE AREAS -->
-    <div class="service-areas container-fluid">
+    <div id="service-areas-section" class="service-areas container-fluid">
       <div class="service-areas-header hidden">
         <h2>Our Specialties</h2>
       </div>
@@ -70,43 +75,81 @@
           <li class="li hidden">RENTALS</li>
           <li class="li hidden">MOVE IN/MOVE OUT</li>
           <li class="li hidden">TILE AND GROUT CLEANING</li>
-        </ul> 
+        </ul>
       </div>
     </div>
 
     <!-- GALLERY OF BEFORE AND AFTER PICTURES -->
-    <div class="gallery-header hidden">
+    <div id="gallery-section" class="gallery-header hidden">
       <h2>Our Work Speaks For Itself</h2>
     </div>
-    <div class="carousel slide carousel-dark" id="carousel-container" data-bs-ride="carousel">
-      <div class="carousel-inner ">
+    <div
+      class="carousel slide carousel-dark"
+      id="carousel-container"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/before-cushion.png" class="d-block" alt="cushion-image">
+          <img
+            src="images/before-cushion.png"
+            class="d-block"
+            alt="cushion-image"
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/before-floor.png" class="d-block" alt="floor-image">
+          <img
+            src="images/before-floor.png"
+            class="d-block"
+            alt="floor-image"
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/before-fridge.png" class="d-block" alt="fridge-image">
+          <img
+            src="images/before-fridge.png"
+            class="d-block"
+            alt="fridge-image"
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/before-sink.png" class="d-block" alt="sink-image">
+          <img src="images/before-sink.png" class="d-block" alt="sink-image" />
         </div>
         <div class="carousel-item">
-          <img src="images/before-sink2.png" class="d-block" alt="second-sink-image">
+          <img
+            src="images/before-sink2.png"
+            class="d-block"
+            alt="second-sink-image"
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/before-tile.png" class="d-block" alt="tile-floor-image">
+          <img
+            src="images/before-tile.png"
+            class="d-block"
+            alt="tile-floor-image"
+          />
         </div>
         <div class="carousel-item">
-          <img src="images/before-toilet.png" class="d-block" alt="toilet-image">
+          <img
+            src="images/before-toilet.png"
+            class="d-block"
+            alt="toilet-image"
+          />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-container" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-container"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-container" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-container"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden"></span>
       </button>
@@ -144,24 +187,33 @@
     </div>
 
     <!-- CONTACT ME -->
-    <div class="contact container-fluid">
+    <div id="contact-section" class="contact container-fluid">
       <div class="row justify-content-center">
         <h2>Don't Hesitate To Book Us Today!</h2>
-        <ul class="col-md-3 col-xs-12 hidden">
+        <ul class="col-md-4 col-xs-12 hidden">
           <li>
-            <img class="icon" src="icons/facebook.png" alt="facebook-icon">
-            <a href="https://www.facebook.com/tidyqueen22">www.facebook.com/tidyqueen</a>
+            <img class="icon" src="icons/facebook.png" alt="facebook-icon" />
+            <a class="facebook"
+               href="https://www.facebook.com/tidyqueen22"
+               target="_blank" 
+               rel="noopener noreferrer"
+              >www.facebook.com/tidyqueen</a
+            >
           </li>
           <li>
-            <img class="icon" src="icons/envelope.png" alt="email">
-             paige.leonard1102@gmail.com
+            <img class="icon" src="icons/envelope.png" alt="email" />
+            paige.leonard1102@gmail.com
           </li>
           <li>
-            <img class="icon" src="icons/telephone-symbol-button.png" alt="phone-icon">
+            <img
+              class="icon"
+              src="icons/telephone-symbol-button.png"
+              alt="phone-icon"
+            />
             (904) 654-7342
           </li>
         </ul>
-        <img src="" alt="">
+        <img src="" alt="" />
       </div>
     </div>
 
