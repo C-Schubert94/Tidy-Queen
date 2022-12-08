@@ -1,0 +1,174 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="app.js"></script>
+
+    <title>Tidy Queen's Home Page</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER IMAGE -->
+    <img
+      class="header-img hidden"
+      src="images/TQ-Header.png"
+      alt="Tidy Queen Header"
+    />
+
+    <!-- SERVICE AREAS -->
+    <div class="service-areas container-fluid">
+      <div class="service-areas-header hidden">
+        <h2>Our Specialties</h2>
+      </div>
+      <div class="row justify-content-center">
+        <ul class="areas-1 col-md-3 col-xs-12">
+          <li class="li hidden">RESIDENTIAL</li>
+          <li class="li hidden">COMMERCIAL</li>
+          <li class="li hidden">OFFICE</li>
+          <li class="li hidden">CONSTRUCTION</li>
+        </ul>
+        <ul class="areas-2 col-md-3 col-xs-12">
+          <li class="li hidden">VACATION</li>
+          <li class="li hidden">RENTALS</li>
+          <li class="li hidden">MOVE IN/MOVE OUT</li>
+          <li class="li hidden">TILE AND GROUT CLEANING</li>
+        </ul> 
+      </div>
+    </div>
+
+    <!-- GALLERY OF BEFORE AND AFTER PICTURES -->
+    <div class="gallery-header hidden">
+      <h2>Our Work Speaks For Itself</h2>
+    </div>
+    <div class="carousel slide carousel-dark" id="carousel-container" data-bs-ride="carousel">
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="images/before-cushion.png" class="d-block" alt="cushion-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-floor.png" class="d-block" alt="floor-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-fridge.png" class="d-block" alt="fridge-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-sink.png" class="d-block" alt="sink-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-sink2.png" class="d-block" alt="second-sink-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-tile.png" class="d-block" alt="tile-floor-image">
+        </div>
+        <div class="carousel-item">
+          <img src="images/before-toilet.png" class="d-block" alt="toilet-image">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-container" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-container" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+
+    <!-- CLEANING SERVICES -->
+    <div class="cleaning-services container-fluid">
+      <div class="services-header hidden">
+        <h2>Our Services Include</h2>
+      </div>
+      <div class="row justify-content-center">
+        <ul class="col-md-3 col-xs-12 hidden">
+          <li class="services-list">Basic Cleaning</li>
+          <li class="li-2">Bathrooms</li>
+          <li class="li-2">Kitchen</li>
+          <li class="li-2">Living Room</li>
+          <li class="li-2">Bedrooms</li>
+          <li class="li-2">Sweeping</li>
+          <li class="li-2">Mopping</li>
+          <li class="li-2">Vacuuming</li>
+          <li class="li-2">Dusting</li>
+          <li class="li-2">Windows</li>
+        </ul>
+        <ul class="col-md-3 col-xs-12 hidden">
+          <li class="services-list">Deep Cleaning</li>
+          <li class="li-2">*Basic Cleaning*</li>
+          <li class="li-2">Ceiling Fans</li>
+          <li class="li-2">Baseboards</li>
+          <li class="li-2">Refrigerator</li>
+          <li class="li-2">Oven</li>
+          <li class="li-2">Laundry</li>
+          <li class="li-2">Other Cleaning Tasks</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTACT ME -->
+    <div class="contact container-fluid">
+      <div class="row justify-content-center">
+        <h2>Don't Hesitate To Book Us Today!</h2>
+        <ul class="col-md-3 col-xs-12 hidden">
+          <li>
+            <img class="icon" src="icons/facebook.png" alt="facebook-icon">
+            <a href="https://www.facebook.com/tidyqueen22">www.facebook.com/tidyqueen</a>
+          </li>
+          <li>
+            <img class="icon" src="icons/envelope.png" alt="email">
+             paige.leonard1102@gmail.com
+          </li>
+          <li>
+            <img class="icon" src="icons/telephone-symbol-button.png" alt="phone-icon">
+            (904) 654-7342
+          </li>
+        </ul>
+        <img src="" alt="">
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
