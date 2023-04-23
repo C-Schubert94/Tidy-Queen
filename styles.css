@@ -114,6 +114,76 @@
     color: var(--primary-color);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 5px;
+}
+
+form button {
+  width: 5rem;
+  height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: rgba(255, 255, 255, 1);
+  border: 0px;
+}
+
+input {
+  width: 30%;
+  height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #000;
+  margin: 1rem 0;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.7)
+}
+
+textarea {
+  width: 30%;
+  min-height: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  resize: none;
+  margin: 1rem 0;
+}
+
+textarea::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+
 /*TEXT ANIMATION*/
 
 .hidden {

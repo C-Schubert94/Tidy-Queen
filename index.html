@@ -192,15 +192,9 @@
     <div id="contact-section" class="contact container-fluid">
       <div class="row justify-content-center">
         <h2>Don't Hesitate To Book Us Today!</h2>
-        <ul class="col-md-4 col-xs-12 hidden">
+        <!-- <ul class="col-md-4 col-xs-12 hidden">
           <li>
-            <img class="icon" src="icons/facebook.png" alt="facebook-icon" />
-            <a class="facebook"
-               href="https://www.facebook.com/tidyqueen22"
-               target="_blank" 
-               rel="noopener noreferrer"
-              >www.facebook.com/tidyqueen</a
-            >
+
           </li>
           <li>
             <img class="icon" src="icons/envelope.png" alt="email" />
@@ -214,7 +208,29 @@
             />
             (904) 654-7342
           </li>
-        </ul>
+        </ul> -->
+
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Name" />
+  
+          <input type="email" name="email" placeholder="Email Address" />
+  
+          <textarea
+            name="message"
+            placeholder="Enter your message here..."
+          ></textarea>
+  
+          <button type="submit">Send</button>
+        </form>
+
+        
+        <!-- <a class="facebook"
+           href="https://www.facebook.com/tidyqueen22"
+           target="_blank" 
+           rel="noopener noreferrer"
+          ><img class="icon" src="icons/facebook.png" alt="facebook-icon" /></a
+        > -->
+        
       </div>
     </div>
 
